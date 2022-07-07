@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: siege
-        image: dockerhandson/loadtest
+        image: dockerp2pro/loadtest
         command: ["siege", "-v", "--concurrent=2", "--benchmark", "--time=4m", "http://hpaclusterservice", "-p"]
       restartPolicy: Never
   backoffLimit: 4
